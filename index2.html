@@ -1,0 +1,31 @@
+<!doctype html>
+
+<head>
+
+    <link rel="stylesheet" href="/skin/skin.css" >
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="/flowplayer.min.js"></script>
+    <script src="//releases.flowplayer.org/drive-analytics/flowplayer.drive-analytics.min.js"></script>
+    <!-- Include the line below if you want to use the HLS.js plugin to avoid flash use on modern browsers -->
+    <script src="//releases.flowplayer.org/hlsjs/flowplayer.hlsjs.min.js"></script>
+    <!-- Include lines below to support multiple resolutions via the VOD quality selector plugin -->
+    <script src="//releases.flowplayer.org/vod-quality-selector/flowplayer.vod-quality-selector.min.js"></script>
+    
+
+</head>
+
+<body>
+
+    <div class="flowplayer"
+    data-ratio="0.4167"
+    data-splash="//drive.cdn.flowplayer.org/202777/84049-snap.jpg"
+    data-rtmp="rtmp://localhost/live1/abc"
+    data-qualities="160p,260p,530p,800p"
+    data-default-quality="360p">
+ <video>
+   <source type="video/flash" src="rtmp://localhost/live1/abc">
+   
+ </video>
+</div>
+
+</body>
